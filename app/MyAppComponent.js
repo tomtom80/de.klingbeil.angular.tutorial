@@ -8,18 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var angular2_1 = require('angular2/angular2');
+var MyAppComponent = (function () {
+    function MyAppComponent() {
+        this.name = 'Tom';
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+    MyAppComponent = __decorate([
+        angular2_1.Component({
+            selector: 'my-app'
+        }),
+        angular2_1.View({
+            template: '<h1>Hello {{ name }}</h1>'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], MyAppComponent);
+    return MyAppComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = MyAppComponent;
